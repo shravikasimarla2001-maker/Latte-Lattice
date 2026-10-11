@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #FBF9F5;
+  --color-surface-dim: #F4EFE6;
+  --color-surface-bright: #FFFFFF;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #F6F1E9;
+  --color-surface-container: #EDE5D8;
+  --color-surface-container-high: #E3D9C9;
+  --color-surface-container-highest: #D5C8B4;
+  
+  --color-primary: #0E283F;
+  --color-primary-navy: #0E283F;
+  --color-primary-amber: #D68C3E;
+  --color-wine: #78253A;
+  --color-rose: #E85B7A;
+  --color-honey: #D68C3E;
+  --color-cream: #F4EFE6;
+  --color-lavender: #8E77B3;
+  --color-secondary: #78253A;
+  
+  --color-on-surface: #132738;
+  --color-on-surface-variant: #647282;
+  --color-outline: #8B7E72;
+  --color-outline-variant: #E3D9C9;
+
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #E3D9C9;
+  border-radius: 2px;
+}
+
+input[type=range]::-moz-range-track {
+  height: 4px;
+  background: #E3D9C9;
+  border-radius: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #D68C3E;
+  margin-top: -5px;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(14, 40, 63, 0.25);
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #D68C3E;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(14, 40, 63, 0.25);
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    opacity: 0.95;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.96);
+  }
+}
+
+.active-beacon {
+  animation: pulseSoft 2.4s infinite ease-in-out;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C8B4;
+  border-radius: 3px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

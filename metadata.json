@@ -1,0 +1,6 @@
+{
+  "name": "Latte Lattice - Generative Sonic-Brew System",
+  "description": "An interactive generative sonic-brew workstation where custom beverage fluid physics continuously synthesize algorithmic ambient soundscapes and Gemini barista recipes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
